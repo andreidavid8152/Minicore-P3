@@ -3,6 +3,13 @@
 @section('title', 'Lista de Empleados')
 
 @section('content')
+
+@if(session('success'))
+<div class="alert alert-success">
+    {{ session('success') }}
+</div>
+@endif
+
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h1>Empleados</h1>
     <a href="{{ route('empleados.create') }}" class="btn btn-primary">Crear Empleado</a>

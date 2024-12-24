@@ -10,6 +10,9 @@
     <div class="mb-3">
         <label for="nombre" class="form-label">Nombre del Departamento</label>
         <input type="text" name="nombre" id="nombre" class="form-control" value="{{ $departamento->nombre }}" required>
+        @error('nombre')
+        <small class="text-danger">{{ $message }}</small>
+        @enderror
     </div>
     <button type="submit" class="btn btn-primary">Actualizar</button>
 </form>

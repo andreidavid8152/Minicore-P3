@@ -9,6 +9,9 @@
     <div class="mb-3">
         <label for="nombre" class="form-label">Nombre del Empleado</label>
         <input type="text" name="nombre" id="nombre" class="form-control" required>
+        @error('nombre')
+        <small class="text-danger">{{ $message }}</small>
+        @enderror
     </div>
     <div class="mb-3">
         <label for="departamento_id" class="form-label">Departamento</label>

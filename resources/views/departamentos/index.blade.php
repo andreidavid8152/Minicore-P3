@@ -3,6 +3,13 @@
 @section('title', 'Lista de Departamentos')
 
 @section('content')
+
+@if(session('success'))
+<div class="alert alert-success">
+    {{ session('success') }}
+</div>
+@endif
+
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h1>Departamentos</h1>
     <a href="{{ route('departamentos.create') }}" class="btn btn-primary">Crear Departamento</a>

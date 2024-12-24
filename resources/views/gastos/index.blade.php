@@ -11,7 +11,10 @@
 
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h1>Gastos</h1>
-    <a href="{{ route('gastos.create') }}" class="btn btn-primary">Registrar Gasto</a>
+    <div>
+        <a href="{{ route('gastos.create') }}" class="btn btn-primary">Registrar Gasto</a>
+        <a href="{{ route('gastos.filtrar') }}" class="btn btn-secondary">Filtrar Gastos</a>
+    </div>
 </div>
 
 @if ($gastos->isEmpty())

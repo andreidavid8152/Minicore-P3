@@ -15,5 +15,6 @@
         @enderror
     </div>
     <button type="submit" class="btn btn-primary">Actualizar</button>
+    <a href="{{  route('departamentos.index') }}" class="btn btn-secondary">Volver</a>
 </form>
 @endsection

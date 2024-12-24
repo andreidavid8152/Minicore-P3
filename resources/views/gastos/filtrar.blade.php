@@ -5,6 +5,8 @@
 @section('content')
 <h1>Filtrar Gastos</h1>
 
+<a href="{{ route('gastos.index') }}" class="btn btn-secondary">Volver</a>
+
 <!-- Formulario de Filtrado -->
 <form action="{{ route('gastos.filtrar') }}" method="GET" class="mt-4">
     <div class="row mb-3">

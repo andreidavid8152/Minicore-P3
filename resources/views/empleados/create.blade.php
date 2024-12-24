@@ -22,5 +22,6 @@
         </select>
     </div>
     <button type="submit" class="btn btn-success">Guardar</button>
+    <a href="{{ route('empleados.index') }}" class="btn btn-secondary">Volver</a>
 </form>
 @endsection

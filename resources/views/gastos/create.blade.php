@@ -33,5 +33,6 @@
         @enderror
     </div>
     <button type="submit" class="btn btn-success">Registrar</button>
+    <a href="{{ route('gastos.index') }}" class="btn btn-secondary">Volver</a>
 </form>
 @endsection

@@ -24,5 +24,6 @@
         @enderror
     </div>
     <button type="submit" class="btn btn-primary">Actualizar</button>
+    <a href="{{ route('gastos.index') }}" class="btn btn-secondary">Volver</a>
 </form>
 @endsection

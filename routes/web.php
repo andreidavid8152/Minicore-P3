@@ -15,4 +15,6 @@ Route::resource('departamentos', DepartamentoController::class);
 // Rutas para Empleado
 Route::resource('empleados', EmpleadoController::class);
 
-Route::get('/gastos', [GastoController::class, 'filtrarGastos'])->name('gastos');
+// Rutas para Gasto
+Route::resource('gastos', GastoController::class);
+Route::get('/gastos/filtrar', [GastoController::class, 'filtrar'])->name('gastos');

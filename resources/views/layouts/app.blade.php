@@ -24,7 +24,7 @@
                             <a class="nav-link text-white" href="{{ route('empleados.index') }}">Empleados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="{{ route('gastos') }}">Filtrar Gastos</a>
+                            <a class="nav-link text-white" href="{{ route('gastos') }}">Gastos</a>
                         </li>
                     </ul>
                 </div>

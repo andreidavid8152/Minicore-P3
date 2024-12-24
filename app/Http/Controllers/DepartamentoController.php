@@ -20,7 +20,7 @@ class DepartamentoController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate(['nombre' => 'required|string|max:255']);
+        $request->validate(['nombre' => 'required|string|max:255|unique:departamentos,nombre']);
         Departamento::create($request->all());
         return redirect()->route('departamentos.index')->with('success', 'Departamento creado exitosamente.');
     }
@@ -32,7 +32,7 @@ class DepartamentoController extends Controller
 
     public function update(Request $request, Departamento $departamento)
     {
-        $request->validate(['nombre' => 'required|string|max:255']);
+        $request->validate(['nombre' => 'required|string|max:255|unique:departamentos,nombre,' . $departamento->id,]);
         $departamento->update($request->all());
         return redirect()->route('departamentos.index')->with('success', 'Departamento actualizado exitosamente.');
     }

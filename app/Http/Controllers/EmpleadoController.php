@@ -23,7 +23,7 @@ class EmpleadoController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nombre' => 'required|string|max:255',
+            'nombre' => 'required|string|max:255|unique:empleados,nombre',
             'departamento_id' => 'required|exists:departamentos,id',
         ]);
 
@@ -40,7 +40,7 @@ class EmpleadoController extends Controller
     public function update(Request $request, Empleado $empleado)
     {
         $request->validate([
-            'nombre' => 'required|string|max:255',
+            'nombre' => 'required|string|max:255|unique:empleados,nombre,' . $empleado->id,
             'departamento_id' => 'required|exists:departamentos,id',
         ]);
 

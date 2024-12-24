@@ -32,7 +32,7 @@
     <button type="submit" class="btn btn-primary">Filtrar</button>
 </form>
 
-<!-- Resultados del Filtrado -->
+<!-- Resultados dels Filtrado -->
 @if (!empty($gastos))
 <h2 class="mt-4">Resultados</h2>
 @if ($gastos->isEmpty())
